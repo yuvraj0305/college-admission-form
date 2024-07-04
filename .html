@@ -1,0 +1,91 @@
+<!-- Insert HTML Body Content Here! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            width: 400px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="password"], textarea, select {
+            width: calc(100% - 12px);
+            padding: 6px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">College Admission Form</h1>
+
+    <form id="college-admission-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="comment">About Me</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="40"></textarea><br>
+
+        <label for="dob">D.O.B.</label>
+        <input type="date" id="dob" name="dob"><br>
+
+        <label for="subjects">Optional Subject</label>
+        <select id="subjects" name="subjects">
+            <option value="math">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="english">English</option>
+            <option value="history">History</option>
+        </select><br>
+
+        <input type="checkbox" id="tnc" name="tnc">
+        <label for="tnc">I agree with all the terms & conditions.</label><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
